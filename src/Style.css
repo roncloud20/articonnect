@@ -1,3 +1,4 @@
+/* Header Component */
 .Header {
     display: flex;
     justify-content: space-between;
@@ -28,6 +29,27 @@
     gap: 30px;
 }
 
+/* Banner Component */
+.Banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px;
+    gap: 20px;
+}
+
+.BannerContent {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+/* Other CSS Styles */
 .LinkButton {
   align-items: center;
   background-color: initial;
