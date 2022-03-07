@@ -7,10 +7,11 @@ function Header() {
             <img src={logo} width={"50px"} height={"50px"} className="Header-logo" alt="logo" />
             <div className='SearchBox'>
                 <input type='search' placeholder='Looking for?' />
+                <i class="fa fa-search"></i>
             </div>
             <div className='HeaderNav'>
-                <label>Categories</label>
-                <button>Get Listed</button>
+                <h2>Categories</h2>
+                <button class="LinkButton">GET LISTED</button>
             </div>
         </div>
     );
