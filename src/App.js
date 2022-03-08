@@ -3,6 +3,7 @@ import './Style.css';
 import Header from './Components/Header';
 import Banner from './Components/Banner';
 import ArtisanRecom from './Components/ArtisanRecom';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Banner />
       <h2>Most Patronized Artisans</h2>
       <ArtisanRecom />
+      <Footer />
     </div>
   );
 }

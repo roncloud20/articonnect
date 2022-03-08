@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './Resources/tap.jpeg';
+import logo from './Resources/logo.png';
 
 function Header() {
     return (
         <div className="Header">
-            <img src={logo} width={"50px"} height={"50px"} className="Header-logo" alt="logo" />
+            <img src={logo} width={"150px"} height={"25px"} className="Header-logo" alt="logo" />
             <div className='SearchBox'>
                 <input type='search' placeholder='Looking for?' />
                 <i class="fa fa-search"></i>

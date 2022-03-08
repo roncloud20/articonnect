@@ -49,6 +49,15 @@
     align-content: space-between;
 }
 /* ArtisanRecom */
+.ArtisanRecom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* padding: 20px; */
+  gap: 40px;
+}
+
+/* ArtisanCard */
 .ArtisanCard {
     display: flex;
     flex-direction: column;
@@ -77,7 +86,6 @@
 .ArtisanCardContent {
   display: flex;
   flex-flow: column;
-  background: cyan;
   width: 100%;
   height: 60%;
   border-radius: 0 0 1rem 1rem;
@@ -105,6 +113,17 @@
   font-family: poppins;
 }
 
+/* Footer */
+.Footer {
+  background-color: #FFA500;
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
 /* Other CSS Styles */
 .LinkButton {
   align-items: center;
@@ -118,7 +137,6 @@
   cursor: pointer;
   display: inline-flex;
   flex-direction: column;
-  /* font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
   font-size: 18px;
   height: 52px;
   justify-content: center;
