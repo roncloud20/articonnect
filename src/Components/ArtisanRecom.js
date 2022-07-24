@@ -1,22 +1,20 @@
 import React from 'react';
 import ArtisanCard from './ArtisanCard';
-// import ArtisanRecom1 from './Resources/ArtisanRecom1.jpg';
 
-function ArtisanRecom() {
+function ArtisanRecom({artisans}) {
     return (
         <div className="ArtisanRecom">
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
-            <ArtisanCard />
+            {
+            artisans.map((v,i) => {
+                return (
+                    <ArtisanCard 
+                        key={artisans[i].id} 
+                        rating={artisans[i].rating}
+                        artisanName={artisans[i].artisanName} 
+                        mobileNumb={artisans[i].mobileNumb} 
+                    />
+                )
+            })}
         </div>
     );
 }
