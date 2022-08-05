@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Header Component */
 .Header {
     display: flex;
@@ -19,6 +29,7 @@
 
 .SearchBox > input {
     border: none;
+    outline: none;
 }
 
 .HeaderNav {
@@ -166,8 +177,180 @@
   box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
 }
 
+/*CatBanner Component*/
+.catBanner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px ;
+        gap: 20px;
+}
+#artisanWork {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+}
+#artisanWork > div{
+  display: flex;
+  flex-flow: wrap;
+ gap: 20px;
+  
+  
+}
+#artisanWork > div > div{
+  width: 150px;
+  height: 28px;
+  border: 1px solid#FFA500;
+  border-radius: 15px;
+  padding: 2px 4px;
+  background-color: #FFA500;
+  
+}
+/* Extend pages*/
+#extend{
+  position: relative;
+}
+
+#extend > img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      
+
+}
+/* #extendMid{
+  position: absolute;
+} */
+#extendMid > img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  position: absolute;
+  /* bottom: 100px; */
+  bottom: 270px;
+  left: 40px;
+}
+#extendText{
+     position: absolute;
+     left: 80%;
+     top: 280px;
+    
+}
+#extendText > span{
+      display: block;
+      /* margin-right: 20px; */
+}
+#social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 65px 60px;
+}
+#socialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#socialContainer > div{
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 20px;
+}
+#socialContainer > div >img{
+      width: 50px;
+}
+#comment{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+#comment > div{
+     font-size: 24x;
+    background: #FFA500;
+    padding: 5px;
+     
+}
+.recent{
+  margin: 60px;
+}
+.recent > div >img{
+  width: 175px;
+  height: 222px;
+}
+.recent > div{
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  gap: 30px;
+}
+#extendComment{
+        display: flex;
+        margin-left: 60px;
+}
+#extendComment > div{
+  display: flex;
+  gap: 20px;
+}
+#extendComment > div >img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#extendComment > div >p{
+  width: 200px;
+  /* height: 100px; */
+}
+#extendScroll{
+  width: 100%;
+  overflow-y: scroll;
+   /* overflow: scroll; */
+}
+
+
+/* #socialContainer{
+  display: flex;
+  
+  gap: 20px;
+} */
+/* #social > div > div>img{
+  width: 100px;
+} */
+
+
+/* #extendProfile >img{
+  height: 100px;
+} */
+/* #extendProfile > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+} */
+/* #extendProfile > div >span{
+  display: block;
+} */
+/* #extendProfile > img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  top:100px;
+  left: 40px;
+  
+  object-fit: cover;
+} */
+/* #extendProfile > div{
+  position: absolute;
+  bottom: -25px;
+  left: 1000px;
+} */
+
 @media (max-width: 420px) {
   .LinkButton {
     height: 48px;
   }
+
 }

@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './Style.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Categories from './Pages/Categories';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
+import Extend from './Pages/Extend'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <Categories/> */}
+    <Router>
+      <Switch>
+        <Route path="/" exact component={App}/>
+        <Route path="/categories" exact component={Categories}/>
+        <Route path="/extend" exact component={Extend}/>
+      </Switch>
+    </Router>
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
