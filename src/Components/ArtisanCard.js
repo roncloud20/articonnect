@@ -1,22 +1,25 @@
 import React from 'react';
 // import ArtisanRecom1 from './Resources/ArtisanRecom1.jpg';
 
-function ArtisanCard() {
+function ArtisanCard({name,whatsappno,call,profession}) {
     return (
         <div className='ArtisanCard'>
+           
             <div className='ArtisanBanner'>
-                <span>Artisan Name</span>
+                 {/* <img src={require("../Components/Resources/me.jpg")} alt=""/> */}
+                <span>{name}</span>
             </div>
             <div className='ArtisanCardContent'>
                 <div className='StarRating'>
                     <span>&#9733;</span> 
                     4.1 Star Rating
+                    {/* {profession} */}
                 </div>
                 <div className='whatsapp'>
-                    Whatsapp Link    
+                    Whatsapp Link {whatsappno}   
                 </div>
                 <div className='mobile'>
-                    Mobile Number    
+                    Mobile Number {call}   
                 </div>
                 <div className='whatsapp'>
                     Chat    
@@ -27,4 +30,9 @@ function ArtisanCard() {
     );
 }
 
+
+
+
+
 export default ArtisanCard;
+

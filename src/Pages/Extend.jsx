@@ -1,5 +1,5 @@
 import Footer from "../Components/Footer"
-import HeaderWhite from "../Components/HeaderWhite"
+import {HeaderWhite} from "../Components/HeaderWhite"
  
  const Extend =()=>{
     return(
@@ -10,24 +10,24 @@ import HeaderWhite from "../Components/HeaderWhite"
              </div>
              <div id="extendMid">
                 <img src={require('../Components/Resources/me.jpg')} alt="me" />
-             </div>
-
+                        {/* </div> */}
                 <div id="extendText">
                         <span>lorem</span>
                         <span>&#9733;&#9733;&#9733;</span> 
                         <span>  4.1 Star Rating </span>
                  </div>
+            </div>
 
                  
                    <div id="social">
                          <div id="socialContainer">
                              <div>
-                                 <img src={require("../Components/Resources/whatsap.jpeg")} alt=""/>
+                                 <img src={require("../Components/Resources/W.jpeg")} alt=""/>
                                 <div>Whatsap</div>
                             </div>
                         
                              <div>
-                                <img src={require("../Components/Resources/mess.png")} alt=""/>
+                                <img src={require("../Components/Resources/M.png")} alt=""/>
                                 <div>Whatsap</div>
                             </div>
                                 

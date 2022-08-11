@@ -1,17 +1,18 @@
 import React from 'react';
 import logo from './Resources/logo.png';
+import { Link } from "react-router-dom"
 
-function Header() {
+function Header({from}) {
     return (
         <div className="Header">
-            <img src={logo} width={"150px"} height={"25px"} className="Header-logo" alt="logo" />
+            <Link to ="/" ><img src={logo} width={"150px"} height={"25px"} className="Header-logo" alt="logo" /></Link>
             <div className='SearchBox'>
-                <input type='search' placeholder='Looking for?' />
+                <input type='search' placeholder='Looking for?' onChange={from} />
                 <i class="fa fa-search"></i>
             </div>
             <div className='HeaderNav'>
-                <h2>Categories</h2>
-                <button class="LinkButton">GET LISTED</button>
+                <h2><Link to ="/categories">Categories</Link></h2>
+                <button class="LinkButton"><Link to ="/SignIn" >GET LISTED</Link></button>
             </div>
         </div>
     );

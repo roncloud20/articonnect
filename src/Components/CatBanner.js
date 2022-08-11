@@ -1,4 +1,4 @@
-const CatBanner=()=>{
+const CatBanner=({to})=>{
     return(
         <div className="catBanner">
             <div>
@@ -6,17 +6,17 @@ const CatBanner=()=>{
                 <div>lorem ipsum</div>
             </div>
             <div className='SearchBox'>
-                <input type='search' placeholder='Looking for?' />
+                <input type='search' placeholder='Looking for?' onChange={to}/>
                 <i class="fa fa-search"></i>
             </div>
             <div id="artisanWork">
                 <div>
-                    <div>Barbing Service   &#128473;</div>
-                    <div>Plumbing Service &#128473;</div>
-                    <div>Catering Service &#128473;</div>
-                    <div>Painting Service &#128473;</div>
-                    <div>Automobile Service &#128473;</div>
-                    <div>Electronics Service &#128473;</div>
+                    <div id="barb">Barbing Service  &nbsp; &#128473;</div>
+                    <div>Plumbing Service &nbsp; &#128473;</div>
+                    <div>Catering Service &nbsp;&#128473;</div>
+                    <div>Painting Service &nbsp;&#128473;</div>
+                    <div>Automobile Service &nbsp;&#128473;</div>
+                    <div>Electronics Service &nbsp;&#128473;</div>
                 </div>
                 <div>
                     <div>Gadget Repair &#128473;</div>
@@ -31,5 +31,9 @@ const CatBanner=()=>{
     )
 }
 
-
 export default CatBanner;
+
+// var barb =document.getElementById("barb");
+// barb.addEventListener("click",function(){
+//     console.log("me")
+// })

@@ -1,11 +1,15 @@
 body {
   margin: 0;
+  padding: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
   font-family: poppins;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+link{
+    text-decoration: none;
 }
 
 /* Header Component */
@@ -16,6 +20,16 @@ body {
     padding: 20px;
     padding-left: 100px;
     padding-right: 50px;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+.Header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 50px;
+    background: #FFA500;
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
 
@@ -39,7 +53,26 @@ body {
     align-items: center;
     gap: 30px;
 }
-
+.HeaderNav >img{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.headerImg{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.HeaderNav >div{
+   font-size: 40px;
+}
+.headerIcon > div{
+  font-size: 20px;   
+}
+.headerIcon{
+   display: flex;
+   gap: 30px;
+}
 /* Banner Component */
 .Banner {
     display: flex;
@@ -67,7 +100,150 @@ body {
   /* padding: 20px; */
   gap: 40px;
 }
+/*Card*/
 
+
+.Card{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 400px;
+  border: #464d55 1px solid;
+  border-radius: 20px;
+  border: #FFA500 2px solid;
+  position: relative;
+  box-sizing: border-box;
+}
+.Card1{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 20px 20px 0 0;
+  /* margin-right: 50px; */
+  /* padding:20px ; */
+
+}
+#name{
+  background-color: lightgray;
+  /* margin-right: 5px; */
+  margin: 0 5px 5px 120px;
+  /* word-break: normal; */
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: wrap;
+  font-weight: bold;
+}
+#cardPic{
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  z-index: 1px;
+  position: absolute;
+  top:120px; 
+  left: 20px;
+}
+
+/* .Card1 >img{
+   height: 150px;
+   width: 100%;
+   border-radius: 15px 15px 0 0;
+   object-fit: cover;
+} */
+
+
+
+/* .Card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  height: 400px;
+  border: #464d55 1px solid;
+  border-radius: 20px;
+  border: #FFA500 2px solid;
+  position: relative;
+} */
+/* .Card1{
+  height: 40%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  } */
+
+/* .Card1 >img{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  } */
+#cardDetails{
+  /* display: flex;
+  flex-direction: column;
+  align-self: flex-end; */
+  /* margin-right: 20px; */
+  /* padding-top: 0; */
+  
+  /* position: absolute; */
+  /* left: 140px; */
+}
+
+#cardDetails > div{
+   text-align: right;
+   margin-right: 20px;
+}
+
+
+.social >div >img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.social >div{
+  display: flex;
+  gap: 20px;
+}
+
+/* #name{
+  position: relative;
+  bottom: 30px;
+  left: 150px;
+  width: 100px;
+  word-wrap: break-work;
+  word-break: break-all;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 2;
+
+  background-color: lightgray;
+  padding: 5px;
+} */
+#name{
+  background-color: lightgray;
+
+}
+
+.social{
+  margin: 10px 0 0px 25px ;
+}
+.social >div{
+  display: flex;
+  align-items: center;
+}
+#button{
+  background-color: #FFA500;
+  margin: 15px 0px 10px 70px ;
+  text-align: center;
+  font-family: poppins;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+}
 /* ArtisanCard */
 .ArtisanCard {
     display: flex;
@@ -185,6 +361,12 @@ body {
         margin-top: 20px ;
         gap: 20px;
 }
+.catList{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
 #artisanWork {
      display: flex;
      flex-direction: column;
@@ -207,11 +389,6 @@ body {
   background-color: #FFA500;
   
 }
-/* Extend pages*/
-#extend{
-  position: relative;
-}
-
 #extend > img{
       width: 100%;
       height: 200px;
@@ -219,33 +396,36 @@ body {
       
 
 }
-/* #extendMid{
-  position: absolute;
-} */
+#extendMid{
+  position: relative;
+}
 #extendMid > img{
   width: 150px;
   height: 150px;
   border-radius: 100px;
   position: absolute;
-  /* bottom: 100px; */
-  bottom: 270px;
-  left: 40px;
+  bottom:-10px;
+
+  left: 220px;
 }
 #extendText{
-     position: absolute;
-     left: 80%;
-     top: 280px;
+        text-align: right;
+        margin-right :150px; ;
+          position: relative;
+          bottom: 30px;
+   
     
 }
 #extendText > span{
       display: block;
-      /* margin-right: 20px; */
+  
 }
 #social{
   display: flex;
   justify-content: space-between;
+
   align-items: center;
-  margin: 65px 60px;
+  margin: 5px 250px;
 }
 #socialContainer {
   display: flex;
@@ -255,7 +435,7 @@ body {
 #socialContainer > div{
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
+  justify-content: space-evenly;
   gap: 20px;
 }
 #socialContainer > div >img{
@@ -283,7 +463,7 @@ body {
 .recent > div{
   display: flex;
   justify-content: space-between;
-  overflow: scroll;
+  overflow-y: scroll;
   gap: 30px;
 }
 #extendComment{
@@ -302,51 +482,378 @@ body {
 }
 #extendComment > div >p{
   width: 200px;
-  /* height: 100px; */
 }
 #extendScroll{
   width: 100%;
   overflow-y: scroll;
-   /* overflow: scroll; */
+}
+
+/*Sign In Css */
+
+.signIn{
+  display: flex;
+  background: #E5E5E5;
+  justify-content: space-between;
+  height: 400px;
+  width: 700px;
+  margin:50px auto;
+}
+.signIn > img{
+  width: 50%;
+  height:400px;
+}
+.signIn > div{
+  width: 50%;
+  height: 539px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+  box-sizing: border-box;
+}
+.signIn > div > h3{
+      text-align: center;
+}
+.signIn > div > form > input{
+          margin:10px 0 0;
+          width: 200px ;
+          height: 15px;
+          border-radius: 5px;
+       
+   
+}
+form > button{
+  width: 200px ;
+  height: 25px;
+  margin:10px 5px 1px;
+  background-color: #17AD1D;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  
+}
+
+form > span{
+  display: block;
+color: #FFA500;
+font-size: 13px;
+text-align: right;
+
+}
+#signForget {
+  margin-left: 5px;
+  font-size: 10px;
+}
+#signForget > span{
+  color: #FFA500;
+  font-size: 10px;
+}
+#or{
+  text-align: center;
+}
+#google{
+  width: 200px;
+  height: 20px;
+  background: #FF2424;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+  margin:10px 0 0;
+  padding: 2px 70px;
+  box-sizing: border-box;
+  color: #fff;
+}
+#facebook{
+  width: 200px;
+  height: 20px;
+  background: #213FDC;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+  margin:15px 0 0;
+  padding: 2px 70px;
+  box-sizing: border-box;
+  color: #fff;
+}
+/* SignUp Css*/
+#signUp{
+        display: flex;
+        background: #E5E5E5;
+        justify-content: space-between;
+        height: 400px;
+        width: 700px;
+        margin:50px auto;
+}
+#signUp > img{
+  width: 50%;
+  height:400px;
+
+}
+#signUp > div{
+  width: 50%;
+  height: 539px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+  box-sizing: border-box;
+}
+#signUp > div > form > input{
+  margin:10px 0 0;
+  width: 200px ;
+  height: 15px;
+  border-radius: 5px;
+
+
+}
+#sign {
+  margin-left: 5px;
+  font-size: 10px;
+}
+#sign > span{
+  color: #FFA500;
+  font-size: 10px;
+}
+
+/*DashBoard Css */
+.Dash{
+   margin: 100px;
+}
+.DashImage {
+  display: flex;
+  gap: 50px;
+  overflow-y: scroll;
+
+}
+.DashImage > img{
+  width: 175px;
+  height: 222px;
+  object-fit: cover;
+
+  
+    
+}
+.dashProfile > div > img{
+  width: 150px;
+height: 200px;
+object-fit: cover;
+
+}
+#dashProfile{
+   display: flex;
+   gap: 30px;
+   justify-items: flex-start;
+   
+}
+#dashProfile > div > p{
+  width: 350px;
+}
+#dashProfile > div > button{
+    background: #FFA500;
+    border: none;
+    padding: 5px;
+}
+.review{
+  width: 300px;
+height: 200px;
+background: #C4C4C4;
+box-sizing: border-box;
+padding: 10px ;
+
+}
+.review>div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#reviewImage > img{
+  width: 70px;
+height: 70px;
+border:1px solid #FFA500;
+border-radius: 50px;
+
+
+}
+#reviewImage{
+   display: flex;
+   gap: 20px;
+}
+
+#reviewImage>div>p{
+     line-height: 2px;
+}
+
+/*Notification css */
+
+.notification{
+  /* width: 500px; */
+  width: 700px;
+  /* width: 878px; */
+  height: 600px;
+  background: #E5E5E5;
+  margin: 100px 300px;
+  }
+
+.notification > #notHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  /* align-content: center; */
+  width: 700px;
+  height: 40px;
+  background: #C4C4C4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 30px;
+  box-sizing: border-box;
+  }
+  /* #notHead > div{
+    font-size: 40px;
+    box-sizing: border-box;
+  } */
+  /* #notContent{
+     display: flex;
+  } */
+  #notContent > div{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     padding: 10px 20px;
+  }
+  #notContent > div >h2{
+      border:1px solid black;
+      border-radius: 30px;
+      background-color:  #FFA500;
+
+  }
+
+  /* Addwork Css*/
+  .addWork > img{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+  }
+  #addWorkBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #E5E5E5;
+    padding-top: 50px;
+    box-sizing: border-box;
+
+  }
+  .AddWorkContainer{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #addWorkBody >input{
+      width: 300px;
+      height: 14px;
+      margin: 0px 0 10px;
+    }
+#change{
+  width: 70px;
+    height: 20px;
+    background: #FFA500;
+    text-align: center;
+    /* padding: 5px; */
+    font-size: 14px;
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+    #uploadImage{
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      margin-top: 10px;
+
+    }
+#upload{
+    width: 170px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #17AD1D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.previous > div{
+  display: flex;
+  justify-content: space-between;
+}
+.previous > div >img{
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+.previous{
+  margin-left: 200px;
+}
+
+  /*  Edit Css  */
+  .edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto;
+    width: 500px;
+    height: 400px;
+    background: #E5E5E5;
+    box-sizing: border-box;
+  }
+  .edit > img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+     position: relative;
+  }
+.editInput > input{
+  display: block;
+  margin-top: 10px;
+  width: 200px;
+}
+#editProfile{
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      position: absolute;
+      top: 220px;
+}
+.editInput{
+     margin: 60px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  
+}
+#editButton{
+  margin-top: 30px;
+  width: 150px;
+  height: 20px;
+  background: #17AD1D;
+  align-items: center;
+  color: #fff;
+  border: none;
+}
+.artlist{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 
-/* #socialContainer{
-  display: flex;
-  
-  gap: 20px;
-} */
-/* #social > div > div>img{
-  width: 100px;
-} */
 
 
-/* #extendProfile >img{
-  height: 100px;
-} */
-/* #extendProfile > img{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-} */
-/* #extendProfile > div >span{
-  display: block;
-} */
-/* #extendProfile > img{
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  position: absolute;
-  top:100px;
-  left: 40px;
-  
-  object-fit: cover;
-} */
-/* #extendProfile > div{
-  position: absolute;
-  bottom: -25px;
-  left: 1000px;
-} */
+
+
+
+      
+
+
+
 
 @media (max-width: 420px) {
   .LinkButton {
